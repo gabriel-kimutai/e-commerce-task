@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Some title</title>
   </head>
   <body>
@@ -12,9 +13,9 @@
     </nav>
     <section>
       <div class="container">
-        <div class="img-text-card">
+        <div  id="text-card" class="img-text-card">
           <img src="assets/Lost-Season-6-lost-10648918-1280-800.jpg" alt="Lost" />
-          <div class="text">
+          <div id="synopsis" data-status="off" class="text">
             <h2>Synopsis</h2>
             <p>
               Season 1 begins with the aftermath of a plane crash, which leaves
@@ -38,7 +39,7 @@
         <div class="vid-card">
             <h2 id="trailer">Trailer</h2>
             <video controls>
-                <source src="assets/lost-trailer.mp4" type="video/mp4">
+                <source src="assets/lost-trailer_720p.mp4" type="video/mp4">
             </video>
         </div>
       </div>
