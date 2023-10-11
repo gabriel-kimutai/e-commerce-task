@@ -1,14 +1,13 @@
-const textCard = document.getElementById("text-card");
-const synopsis = document.getElementById("synopsis");
+const fold = document.getElementById("fold");
 
 if (screen.width <= 425) {
-  textCard.addEventListener("click", (e) => {
-    if (synopsis.dataset.status == "off") {
-      synopsis.style.height = "fit-content";
-      synopsis.dataset.status = "on";
-    } else if (synopsis.dataset.status == "on") {
-      synopsis.style.height = "10rem";
-      synopsis.dataset.status = "off";
+  fold.addEventListener("click", (e) => {
+    if (fold.dataset.status == "off") {
+      fold.style.height = "fit-content";
+      fold.dataset.status = "on";
+    } else if (fold.dataset.status == "on") {
+      fold.style.height = "10rem";
+      fold.dataset.status = "off";
     }
   });
 }
